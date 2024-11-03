@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Базовая разметка HTML</title>
+  <link rel="stylesheet" href="zxc.css">
+</head>
+<body>
+  <div id="main">
+    <h1 id="zxc">Чемпион</h1>
+    <button id = "kick1">Кикбоксинг</button>
+    <button id = "kick2">Таеквон-до</button>
+    <button id = "kick3">Стретчинг</button>
+    <button id = "kick4">О нас</button>
+  </div>
+
+
+    <form id="form_k">
+      <h1 id="zxc1">Чемпион</h1>
+      <input type="text" placeholder="Имя и Фамилия" id = "name">
+      <input type="text" placeholder="Email" id = "email">
+      <input type="text" placeholder="Телефон" id = "phone">
+      <button id="order">Подать Заявку</button>
+    </form>
+
+</body>
+<script src="https://telegram.org/js/telegram-web-app.js">
+  let tg = window.Telegram.WebApp;
+  let kick = document.getElementById('kick1');
+  let kick1 = document.getElementById('kick2');
+  let kick2 = document.getElementById('kick3');
+  let kick3 = document.getElementById('kick4');
+  let order = document.getElementById('order');
+
+  kick.addEventListener('click', ()=> {
+    document.getElementById('main').style.display = 'none';
+    document.getElementById('form_k').style.display = 'block';
+  });
+
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tiny5&display=swap');
+body{
+  color: var(--tg-theme-text-color);
+  background-color: var(--tg-theme-bg-color);
+}
+#form_k{
+  display: none;
+  text-align: center;
+  #name{
+    border: 0;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    border-radius: 15px;
+    font-size: 27px;
+    transition: all 0.7s;
+    color: var(--tg-theme-button-color);
+    background: var(--tg-theme-button-text-color);
+  }
+  #email{
+    border: 0;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    border-radius: 15px;
+    font-size: 27px;
+    transition: all 0.7s;
+    color: var(--tg-theme-button-color);
+    background: var(--tg-theme-button-text-color);
+    
+  }
+  #phone{
+    border: 0;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    border-radius: 15px;
+    font-size: 27px;
+    transition: all 0.7s;
+    color: var(--tg-theme-button-color);
+    background: var(--tg-theme-button-text-color);
+  }
+  #order{
+    border: 0;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    border-radius: 15px;
+    font-size: 27px;
+    transition: all 0.7s;
+    color: var(--tg-theme-button-color);
+    background: var(--tg-theme-button-text-color);
+  }
+}
+
+#zxc{
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  margin: 2rem;
+  display: block;
+  color:#1E2A78;
+  
+}
+#zxc1{
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  margin: 2rem;
+  display: block;
+  color:#1E2A78;
+  
+}
+#kick1{
+  font-family: 'Nunito', sans-serif;
+  margin: 0 auto;
+  display: block;
+  border-radius: 15px;
+  font-size: 27px;
+  transition: all 0.7s;
+  color: var(--tg-theme-button-color);
+  background: var(--tg-theme-button-text-color);
+}
+#kick1:hover{
+  background: var(--tg-theme-secondary-bg-color);
+}
+#kick2{
+
+  font-family: 'Nunito', sans-serif;
+  margin: 0 auto;
+  display: block;
+  border-radius: 15px;
+  font-size: 27px;
+  transition: all 0.7s;
+  color: var(--tg-theme-button-color);
+  background: var(--tg-theme-button-text-color);
+}
+#kick2:hover{
+  background: var(--tg-theme-secondary-bg-color);
+}
+
+#kick3{
+  color: var(--tg-theme-button-color);
+  background: var(--tg-theme-button-text-color);
+  font-family: 'Nunito', sans-serif;
+  margin: 0 auto;
+  display: block;
+  border-radius: 15px;
+  font-size: 27px;
+  transition: all 0.7s;
+}
+#kick3:hover{
+  background: var(--tg-theme-secondary-bg-color);
+}
+#kick4{
+  color: var(--tg-theme-button-color);
+  background: var(--tg-theme-button-text-color);
+  font-family: 'Nunito', sans-serif;
+  margin: 0 auto;
+  display: block;
+  border-radius: 15px;
+  font-size: 27px;
+  transition: all 0.7s;
+}
+#kick4:hover{
+  background: var(--tg-theme-secondary-bg-color);
+}
+@media (max-width: 400px) {
+    #zxc {
+        font-size: 45px;
+        text-align: center;
+    }
+    #kick1{
+      margin-top: 6rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+      font-size: 24px;
+    }
+    #kick2{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+      font-size: 24px;
+    }
+    #kick3{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+      font-size: 24px;
+    }
+    #kick4{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+      font-size: 24px;
+    }
+  }
+@media (max-width: 600px) {
+    #zxc {
+        font-size: 50px;
+        text-align: center;
+    }
+    #zxc1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    #kick1{
+      margin-top: 6rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    }
+    #kick2{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    }
+    #kick3{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    }
+    #kick4{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    }
+    #email{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    }
+    #name{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    }
+    #order{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    }
+  }
+  @media (max-width: 1200px) {
+    #zxc {
+        font-size: 50px;
+        text-align: center;
+    }
+    #kick1{
+      margin-top: 6rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    }
+    #kick2{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    }
+    #kick3{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    }
+    #kick4{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    
+    }
+    #phone{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    }
+    #email{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    }
+    #name{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    }
+    #order{
+      margin-top: 1rem;
+      height: 60px;
+      width: 80%;
+      border: 0;
+      outline: none;
+    }
+  }
+</style>
+</html>

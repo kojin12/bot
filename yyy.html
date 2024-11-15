@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн маркет автозапчастей</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+        /* Основной стиль */
+        body {
+            font-family: 'Jost';
+            margin: 0;
+            padding: 0;
+            background-color: #BBC6C8;
+        }
+
+        /* Контейнер с закругленными углами, который займет почти всю ширину и высоту */
+        .container {
+            width: 90%;
+            height: 90%;  /* Это займет всю высоту экрана */
+            padding: 20px;  /* Отступы внутри контейнера */
+            box-sizing: border-box;  /* Учитываем padding внутри элемента */
+            border-radius: 50px;  /* Закругляем углы */
+            background-color: #E5E3E4;  /* Цвет фона */
+            overflow: auto;  /* Позволяет прокручивать содержимое, если оно выходит за пределы */
+            margin:20px auto;  /* Отступы снаружи */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Легкая тень для контейнера */
+        }
+
+        /* Стиль для заголовков */
+        h1 {
+            text-align: center;
+            margin: 0px;
+        }
+
+        .title {
+            margin: 10px;
+            font-size: 30px;
+            color: #469597;
+        }
+
+        .title2 {
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        /* Контейнер для фотографий */
+        .products {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .c {
+            border-radius: 15px;
+        }
+        .jk{
+        
+          background-color: #ffffff;
+          width: 90%;
+          height: 140px;
+          margin: 10px auto;
+          border-radius: 40px;
+        }
+
+        /* Стиль для каждого товара */
+        .product {
+            background-color: #f4f4f4;
+            box-shadow: 3px 3px 7px 0px rgba(34, 60, 80, 0.2);
+            border-radius: 17px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .buy-button {
+            background-color: #5BA199;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            box-shadow: 4px 4px 8px 0px rgba(32, 56, 75, 0.3);
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Контейнер с закругленными углами, который займет почти всю ширину и длину экрана -->
+    <div class="container">
+      <div class="jk">
+        <h1 class="title">Онлайн маркет</h1>
+        <h1 class="title2">Автозапчастей</h1>
+      </div>
+
+        <div class="products">
+            <!-- Ряд 1 -->
+            <div class="product">
+                <img src="ооо.jpg" alt="Автозапчасть 1" class="c">
+                <button class="buy-button">Купить</button>
+            </div>
+            <div class="product">
+                <img src="ооо.jpg" alt="Автозапчасть 2">
+                <button class="buy-button">Купить</button>
+            </div>
+            <div class="product">
+                <img src="ооо.jpg" alt="Автозапчасть 3">
+                <button class="buy-button">Купить</button>
+            </div>
+
+            <!-- Ряд 2 -->
+            <div class="product">
+                <img src="ооо.jpg" alt="Автозапчасть 4">
+                <button class="buy-button">Купить</button>
+            </div>
+            <div class="product">
+                <img src="ооо.jpg" alt="Автозапчасть 5">
+                <button class="buy-button">Купить</button>
+            </div>
+            <div class="product">
+                <img src="ооо.jpg" alt="Автозапчасть 6">
+                <button class="buy-button">Купить</button>
+            </div>
+
+            <!-- Ряд 3 -->
+            <div class="product">
+                <img src="ооо.jpg" alt="Автозапчасть 7">
+                <button class="buy-button">Купить</button>
+            </div>
+            <div class="product">
+                <img src="ооо.jpg" alt="Автозапчасть 8">
+                <button class="buy-button">Купить</button>
+            </div>
+            <div class="product">
+                <img src="ооо.jpg" alt="Автозапчасть 9">
+                <button class="buy-button">Купить</button>
+            </div>
+
+            <!-- Ряд 4 -->
+            <div class="product">
+                <img src="ооо.jpg" alt="Автозапчасть 10">
+                <button class="buy-button">Купить</button>
+            </div>
+            <div class="product">
+                <img src="ооо.jpg" alt="Автозапчасть 11">
+                <button class="buy-button">Купить</button>
+            </div>
+            <div class="product">
+                <img src="ооо.jpg" alt="Автозапчасть 12">
+                <button class="buy-button">Купить</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

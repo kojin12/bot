@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн маркет автозапчастей</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+        /* Основной стиль */
+        body {
+            font-family: 'Jost';
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        /* Стиль для заголовков */
+        h1{
+          font-family: 'Jost';
+            text-align: center;
+            margin: 0;
+          
+        }
+
+        .title{
+            font-size: 50px;
+            color: #0f2182;
+        }
+        .title2{
+            font-size: 40px;
+        }
+
+        /* Контейнер для фотографий */
+        .products {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+            gap: 10px;
+            padding: 10px;
+        }
+        .c{
+          border-radius: 15px;
+        }
+        /* Стиль для каждого товара */
+        .product {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 17px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .buy-button {
+            background-color: #0f2182;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .buy-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Адаптивность для мобильных устройств */
+    </style>
+</head>
+<body>
+
+    <h1 class="title">Онлайн маркет</h1>
+    <h1 class="title2">Автозапчастей</h1>
+
+    <div class="products">
+        <!-- Ряд 1 -->
+        <div class="product">
+            <img src="ооо.jpg" alt="Автозапчасть 1" class="c">
+            <button class="buy-button">Купить</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Автозапчасть 2">
+            <button class="buy-button">Купить</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Автозапчасть 3">
+            <button class="buy-button">Купить</button>
+        </div>
+
+        <!-- Ряд 2 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Автозапчасть 4">
+            <button class="buy-button">Купить</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Автозапчасть 5">
+            <button class="buy-button">Купить</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Автозапчасть 6">
+            <button class="buy-button">Купить</button>
+        </div>
+
+        <!-- Ряд 3 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Автозапчасть 7">
+            <button class="buy-button">Купить</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Автозапчасть 8">
+            <button class="buy-button">Купить</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Автозапчасть 9">
+            <button class="buy-button">Купить</button>
+        </div>
+
+        <!-- Ряд 4 -->
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Автозапчасть 10">
+            <button class="buy-button">Купить</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Автозапчасть 11">
+            <button class="buy-button">Купить</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Автозапчасть 12">
+            <button class="buy-button">Купить</button>
+        </div>
+    </div>
+
+</body>
+</html>

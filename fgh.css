@@ -6,6 +6,12 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 li{
     list-style: none;
 }
@@ -180,15 +186,17 @@ footer .top ul{
     .container {
         grid-template-columns: repeat(3, 1fr); 
     }
+    .container1 {
+        grid-template-columns: repeat(3, 1fr); 
+    }
 }
 
 @media (max-width: 900px) {
     .new{
         top: 100vh;
     }
-    .container {
+    .container,  .container1 {
         grid-template-columns: repeat(2, 1fr); 
-        margin-top: 20%;
     }
 }
 
@@ -196,8 +204,13 @@ footer .top ul{
     .new{
         top: 95vh;
     }
-    .container {
+    .container,  .container1 {
         grid-template-columns: 1fr; 
+    }
+    nav ul,
+    footer .top ul{
+        display: flex;
+        gap: 10px;
     }
 }
 .product:hover {
@@ -254,15 +267,11 @@ footer .top ul{
     margin-bottom: 20px;
 }
 .container1{
-    position: absolute;
-    top: 250%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    margin-top: 15%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     padding: 20px;
+    margin-top: 20px;
 }
 .product1 {
     border: 1px solid #ccc;
@@ -335,4 +344,29 @@ footer .top ul{
 .product3 p {
     font-size: 1em;
     color: #555;
+}
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки на больших экранах */
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+    .container1 {
+        grid-template-columns: repeat(3, 1fr); /* 3 колонки на экранах меньше 1200px */
+    }
+}
+
+@media (max-width: 900px) {
+    .container1 {
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки на экранах меньше 900px */
+    }
+}
+
+@media (max-width: 600px) {
+    .container1 {
+        grid-template-columns: 1fr; /* 1 колонка на экранах меньше 600px */
+    }
 }

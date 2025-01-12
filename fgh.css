@@ -346,6 +346,7 @@ footer .top ul{
     color: #555;
 }
 .container1 {
+    justify-content: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 колонки на больших экранах */
     gap: 20px;

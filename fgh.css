@@ -256,10 +256,10 @@ footer .top ul{
     transform: translateX(-50%) translateY(-10px);
 }
 .akzia{
-    position: relative; 
-    margin-top: 40px; 
+    position: relative; /* Убираем фиксированное позиционирование, чтобы элемент располагался по стандартному потоку */
+    margin-top: 40px; /* Добавляем отступ сверху, чтобы разместить элемент ниже .container1 */
     left: 50%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%); /* Центрируем по горизонтали */
     font-size: clamp(4rem, 5vw, 6rem);
     color: #000000;
     text-align: center;

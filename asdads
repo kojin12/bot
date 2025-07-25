@@ -1,0 +1,33 @@
+body{
+    font-family: "Comfortaa", sans-serif;;
+    background-color: black;
+}
+.title{
+    font-size: 20px;
+    position: fixed;
+    left: 3%;
+    top: -1%;
+    color: white;
+}
+.info_akk {
+    position: fixed;
+    top: 12%;
+    left: 4%;
+
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+
+}
+
+.circle {
+    background-color: aqua;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.name {
+    color: white;
+    font-size: 23px;
+}
